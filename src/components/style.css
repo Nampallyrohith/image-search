@@ -1,0 +1,190 @@
+.image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+h1{
+    padding-bottom: 20px;
+}
+.image-results{
+    width: 1000px;
+}
+.image-results ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-results ul li img{
+    width: 180px;
+    height: 220px;
+    
+    border-radius: 5px;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.input-container input {
+    height: 40px;
+    width: 550px;
+    outline: none;
+    border-width: 0px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-left: 8px;
+}
+
+
+.input-container button{
+    width: 120px;
+    border-width: 0px;
+    height: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #514ef1;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.tab-container{
+    display: flex;
+    margin: 20px 0px;
+}
+
+.tab-container div{
+    margin-right: 30px;
+}
+
+.tab-btn{
+    background-color: #8f8cd7;
+    color: #fff;
+    height: 30px;
+    border-radius: 8px;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.pagination{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.pagination p{
+    margin: 0px 10px;
+}
+
+.btn{
+    background-color: #514ef1;
+    color: #fff;
+    width: 60px;
+    height: 35px;
+    border-width: 0px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.img-btn{
+    border-width: 0px;
+    background-color: transparent;
+    margin: 15px;
+}
+
+.card{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1 div{
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.card div img{
+    width: 500px;
+    height: 500px;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 767px){
+    .input-container input{
+        width: 250px;
+    }
+    .input-container button{
+        width: 80px;
+        font-size: 13px;
+    }
+
+    .image-results{
+        width: 600px;
+    }
+    .image-results ul li img{
+        width: 120px;
+        height: 180px;
+    }
+
+    .tab-container{
+        margin: 8px 0;
+    }
+
+    .tab-btn{
+        font-size: 12px;
+    }
+    .card .div1{
+        flex-direction: column
+    }
+    .card div img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .input-container input{
+        width: 120px;
+    }
+    .input-container button{
+        width: 50px;
+        font-size: 11px;
+    }
+    .image-results{
+        width: 450px;
+    }
+    .image-results ul li img{
+        width: 120px;
+        height: 170px;
+    }
+    .tab-container{
+        margin: 4px 0;
+    }
+
+    .tab-btn{
+        font-size: 10px;
+    }
+    .card .div1{
+        flex-direction: column
+    }
+    .card div img{
+        width: 220px;
+        height: 220px;
+    }
+}
