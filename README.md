@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Image Search Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Goal
 
-## Available Scripts
+The goal of this assignment is to build a simple single-screen web app using ReactJS that displays images based on user searches. Images are fetched from a public API. The design wireframe and business specifications provided have been followed closely.
 
-In the project directory, you can run:
+## Requirements
 
-### `npm start`
+- The app should be built using ReactJS.
+- The app should fetch data from the provided public APIs and display it to users.
+- While the data is being fetched, the app should show a loading state. Shimmer animation is optional.
+- When the user hovers over any image, it should show the details of the image in an anchor pop-up.
+- The app should be responsive.
+- You are free to choose the colors, fonts, sizes, etc., as you like.
+- Your git commit should convey the progress clearly. Commit history should be meaningful.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## API Details
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- You are required to register yourself as a developer and get the API keys at [Unsplash Developers](https://unsplash.com/developers).
+- For making the search request and fetching the results, use this API: [Unsplash Search Photos API](https://unsplash.com/documentation#search-photos).
 
-### `npm test`
+## Third-Party Libraries Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `react-icons`: For using icons in the app.
+- `react-tooltip`: For showing tooltips.
+- `react-popup`: For showing pop-up modals.
 
-### `npm run build`
+## Project Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/image-search-web-app.git
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory:
+    ```bash
+    cd image-search-web-app
+    ```
 
-### `npm run eject`
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the development server:
+    ```bash
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```plaintext
+image-search-web-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── InputSearch.js
+│   │   ├── Pagination.js
+│   │   ├── SearchImageContainer.js
+│   │   ├── TabSearch.js
+│   │   ├── style.css
+│   ├── App.css
+│   ├── App.js
+│   └── index.js
+│   
+├── .gitignore
+├── package.json
+└── README.md
